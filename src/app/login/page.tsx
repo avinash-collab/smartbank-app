@@ -23,7 +23,7 @@ export default function LoginPage() {
         localStorage.setItem('userId', res.userId); // <-- Add this
         router.push('/dashboard');
         
-    } catch (err) {
+    } catch  {
       setError('Login failed. Please check your credentials.');
     }
   };

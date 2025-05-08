@@ -51,7 +51,7 @@ export default function Dashboard() {
       try {
         const decoded = jwtDecode<DecodedToken>(token);
         setUserEmail(decoded.sub);
-      } catch (err) {
+      } catch  {
         localStorage.removeItem('token');
         router.push('/login');
       }
